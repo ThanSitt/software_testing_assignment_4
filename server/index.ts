@@ -13,6 +13,7 @@ app.use(express.json());
 // Routes
 app.use('/api/dogs', dogRoutes);
 
+export {app}
 // Health check endpoint
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({ status: 'Server is running' });
